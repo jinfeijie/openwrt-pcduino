@@ -1,0 +1,1688 @@
+Package: busybox
+Version: 1.35.0-5
+Depends: libc
+Conflicts: busybox-selinux
+Source: package/utils/busybox
+SourceName: busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Require-User: ntp=123:ntp=123
+SourceDateEpoch: 1667682429
+CPE-ID: cpe:/a:busybox:busybox
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 233608
+Filename: busybox_1.35.0-5_arm_cortex-a7_neon-vfpv4.ipk
+Size: 234023
+SHA256sum: 2b393384741ffa88f6bac8c32fc1f8764cae161917b939c9a3b2050137e89fbb
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: ca-bundle
+Version: 20211016-1
+Depends: libc
+Provides: ca-certs
+Source: package/system/ca-certificates
+SourceName: ca-bundle
+Section: base
+SourceDateEpoch: 1638377555
+Architecture: all
+Installed-Size: 113265
+Filename: ca-bundle_20211016-1_all.ipk
+Size: 114085
+SHA256sum: 840a092f90292bc163878ecc09f854064dfd97af209016576d4e66d70dcebb5b
+Description:  System CA certificates as a bundle
+
+Package: ca-certificates
+Version: 20211016-1
+Depends: libc
+Provides: ca-certs
+Source: package/system/ca-certificates
+SourceName: ca-certificates
+Section: base
+SourceDateEpoch: 1638377555
+Architecture: all
+Installed-Size: 122716
+Filename: ca-certificates_20211016-1_all.ipk
+Size: 123417
+SHA256sum: a97e605eb2efca866c207e6be83abb8b88c8e0e6e123842cbf02f6e036af3ce1
+Description:  System CA certificates
+
+Package: dnsmasq
+Version: 2.87-6
+Depends: libc, libubus20220601
+Source: package/network/services/dnsmasq
+SourceName: dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+SourceDateEpoch: 1669557968
+CPE-ID: cpe:/a:thekelleys:dnsmasq
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 136931
+Filename: dnsmasq_2.87-6_arm_cortex-a7_neon-vfpv4.ipk
+Size: 137288
+SHA256sum: d98f6124a9471e25e6b2932d6e0a838c326a924bc01d94f557fd6faac3ce054b
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: e2fsprogs
+Version: 1.46.5-2
+Depends: libc, libuuid1, libext2fs2
+Source: package/utils/e2fsprogs
+SourceName: e2fsprogs
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: utils
+SourceDateEpoch: 1670364540
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 192190
+Filename: e2fsprogs_1.46.5-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 192631
+SHA256sum: 90cd007dfadca3eb3a083f0b5c163ab881058e19d8244aab0b2371ebba7e2b0f
+Description:  This package contains essential ext2 filesystem utilities which consists of
+ e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
+
+Package: firewall4
+Version: 2022-11-29-700a925f-2
+Depends: ucode (>= 2022-03-22), libc, kmod-nft-core, kmod-nft-fib, kmod-nft-offload, kmod-nft-nat, nftables-json, ucode, ucode-mod-fs, ucode-mod-ubus, ucode-mod-uci
+Provides: uci-firewall
+Source: package/network/config/firewall4
+SourceName: firewall4
+License: ISC
+Section: net
+SourceDateEpoch: 1670399696
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 28010
+Filename: firewall4_2022-11-29-700a925f-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 28977
+SHA256sum: 8bb4c915ca9f2de5a2fabc4c862edb2428577473251e696c58a8aec5902cac81
+Description:  This package provides an nftables-based implementation of the UCI firewall
+ sharing the same configuration format.
+
+Package: getrandom
+Version: 2022-08-13-4c7b720b-1
+Depends: libc
+Source: package/system/ubox
+SourceName: getrandom
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1660416790
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 1425
+Filename: getrandom_2022-08-13-4c7b720b-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 2191
+SHA256sum: b6df19a3e3f8b85bb32f1355111abc23634ed8078b7ee9d4e2e92526ed9e8af5
+Description:  OpenWrt getrandom system helper
+
+Package: hostapd-common
+Version: 2022-07-29-b704dc72-10.1
+Depends: libc
+Source: package/network/services/hostapd
+SourceName: hostapd-common
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1670925290
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 12527
+Filename: hostapd-common_2022-07-29-b704dc72-10.1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 13313
+SHA256sum: f78227a29846ffa7c2e33e5514e9a432035b9a3ce88cf1ff8eaa98dc5816ce95
+Description:  hostapd/wpa_supplicant common support files
+
+Package: ipset-dns
+Version: 2017-10-08-ade2cf88-1
+Depends: libc, libmnl0
+Source: package/network/services/ipset-dns
+SourceName: ipset-dns
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1664984227
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4290
+Filename: ipset-dns_2017-10-08-ade2cf88-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5331
+SHA256sum: 22178d0c8241e940de8958a0e2c4a1ca7e9276db8a9144a668100582b5b1c346
+Description:  The ipset-dns daemon is a lightweight DNS forwarding server that adds all
+ resolved IPs to a given netfilter ipset. It is designed to be used in
+ conjunction with dnsmasq's upstream server directive.
+ 
+ Practical use cases include routing over a given gateway traffic for
+ particular web services or webpages that do not have a priori predictable
+ IP addresses and instead rely on dizzying arrays of DNS resolutions.
+
+Package: ipset
+Version: 7.16-1
+Depends: libc, kmod-ipt-ipset, libmnl0, libipset13
+Source: package/network/utils/ipset
+SourceName: ipset
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1669550313
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 1292
+Filename: ipset_7.16-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 2064
+SHA256sum: 48821451cf8ad13aa7693a33c4b670454e0d4b0047e63579aa40ffc1b9e2b8ac
+Description:  IPset administration utility
+
+Package: iw
+Version: 5.19-1
+Depends: libc, libnl-tiny2022-11-01
+Source: package/network/utils/iw
+SourceName: iw
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1670681719
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 47615
+Filename: iw_5.19-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 48413
+SHA256sum: 20aa30c3e64ed1d864bb0bf6394d82114106d890a814d4326e2b451aee194f1f
+Description:  cfg80211 interface configuration utility
+
+Package: iwinfo
+Version: 2022-11-01-00aab871-1
+Depends: libc, libiwinfo20210430
+Source: package/network/utils/iwinfo
+SourceName: iwinfo
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1667322279
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7064
+Filename: iwinfo_2022-11-01-00aab871-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7876
+SHA256sum: 06a8345f687a2699fce49fd6e664ab24cf8a79e04c03f4884322ef674f2d138c
+Description:  Command line frontend for the wireless information library.
+
+Package: jansson4
+Version: 2.14-3
+Depends: libc
+Provides: jansson
+Source: package/libs/jansson
+SourceName: jansson
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1662478600
+ABIVersion: 4
+CPE-ID: cpe:/a:jansson_project:jansson
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 19635
+Filename: jansson4_2.14-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 20396
+SHA256sum: d825f18ad9c199d3114c3a4527f74f9989ad2bb52bb725a9d2923be01c484aa5
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
+
+Package: jshn
+Version: 2022-09-27-ea560134-1
+Depends: libc, libjson-c5, libubox20220927, libblobmsg-json20220927
+Source: package/libs/libubox
+SourceName: jshn
+License: ISC
+Section: utils
+SourceDateEpoch: 1665745943
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6456
+Filename: jshn_2022-09-27-ea560134-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7223
+SHA256sum: 277b7a1789e5d1ebdf23b8ad7e1f7d96fa6e6b34a7300c85d054348a17742a71
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2018-02-04-c7e938d6-1
+Depends: libc, libubox20220927, libjson-c5
+Source: package/utils/jsonfilter
+SourceName: jsonfilter
+License: ISC
+Section: base
+SourceDateEpoch: 1645878990
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 9157
+Filename: jsonfilter_2018-02-04-c7e938d6-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9924
+SHA256sum: 421b153d402b4490f8c67d2d4ab252c8d5883737a17e7ff0660098590455756f
+Description:  OpenWrt JSON filter utility
+
+Package: libblkid1
+Version: 2.38-2
+Depends: libc, libuuid1
+Provides: libblkid
+Source: package/utils/util-linux
+SourceName: libblkid
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+SourceDateEpoch: 1652625160
+ABIVersion: 1
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 95469
+Filename: libblkid1_2.38-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 96133
+SHA256sum: ae8405ce9e0993300c7e60fcc213fcb938891aca2928c30290ae7451440eb75c
+Description:  The libblkid library is used to identify block devices (disks) as to their
+ content (e.g. filesystem type, partitions) as well as extracting additional
+ information such as filesystem labels/volume names, partitions, unique
+ identifiers/serial numbers...
+
+Package: libblobmsg-json20220927
+Version: 2022-09-27-ea560134-1
+Depends: libc, libjson-c5, libubox20220927
+Provides: libblobmsg-json
+Source: package/libs/libubox
+SourceName: libblobmsg-json
+License: ISC
+Section: libs
+SourceDateEpoch: 1665745943
+ABIVersion: 20220927
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3442
+Filename: libblobmsg-json20220927_2022-09-27-ea560134-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4203
+SHA256sum: e1d6763391e0f1173c7ce6b818756d210e9a798215853ce679402cdcf5d970f7
+Description:  blobmsg <-> json conversion library
+
+Package: libcap
+Version: 2.66-1
+Depends: libc
+Source: package/libs/libcap
+SourceName: libcap
+License: GPL-2.0-only
+LicenseFiles: License
+Section: libs
+SourceDateEpoch: 1664734974
+CPE-ID: cpe:/a:libcap_project:libcap
+Maintainer: Paul Wassi <p.wassi@gmx.at>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 13512
+Filename: libcap_2.66-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 14218
+SHA256sum: 6af42b461f43a155000e98500aa8ba706d75c7f559b477e01211323be2f845cc
+Description:  Linux capabilities library library
+
+Package: libcomerr0
+Version: 1.46.5-2
+Depends: libc, libuuid1
+Provides: libcomerr
+Source: package/utils/e2fsprogs
+SourceName: libcomerr
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670364540
+ABIVersion: 0
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3778
+Filename: libcomerr0_1.46.5-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4557
+SHA256sum: a011471e42f10971b1e967a3c3d2b8bbc4accc5d51297ddf20375ff05d1d81b7
+Description:  This package contains libcom_err, the common error description library
+ bundled with e2fsprogs.
+
+Package: libevent2-7
+Version: 2.1.12-1
+Depends: libc
+Provides: libevent2
+Source: package/libs/libevent2
+SourceName: libevent2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1613327895
+ABIVersion: -7
+CPE-ID: cpe:/a:libevent_project:libevent
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 84025
+Filename: libevent2-7_2.1.12-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 85133
+SHA256sum: 08bd2efba2f3a295d0cbad236e6d2552877b617674c5ab7b43b62524c23d5d74
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent shared library historically
+ containing both the core & extra libraries.
+
+Package: libext2fs2
+Version: 1.46.5-2
+Depends: libc, libuuid1, libblkid1, libss2, libcomerr0
+Provides: libext2fs
+Source: package/utils/e2fsprogs
+SourceName: libext2fs
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670364540
+ABIVersion: 2
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 171903
+Filename: libext2fs2_1.46.5-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 172203
+SHA256sum: 86d4e4d1aa1e8f7209777b359316fe20c09d861fa29cec9c1adbb2dc6950d7e0
+Description:  libext2fs is a library which can access ext2, ext3 and ext4 filesystems.
+
+Package: libf2fs6
+Version: 1.15.0-1
+Depends: libc, libuuid1
+Conflicts: libf2fs-selinux
+Provides: libf2fs
+Source: package/utils/f2fs-tools
+SourceName: libf2fs
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1662478602
+ABIVersion: 6
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 41650
+Filename: libf2fs6_1.15.0-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 42420
+SHA256sum: 308dbea222d7f4d620f3b056aa0b2793344b29e57064a73abaec4d45ebe42442
+Description:  Library for Flash-Friendly File System (F2FS) tools
+
+Package: libipset13
+Version: 7.16-1
+Depends: libc, kmod-ipt-ipset, libmnl0
+Provides: libipset
+Source: package/network/utils/ipset
+SourceName: libipset
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1669550313
+ABIVersion: 13
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 44119
+Filename: libipset13_7.16-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 44526
+SHA256sum: 459205ec4ab25ae6257424b356874e42855d35aa3144f99a05c90c267d413d44
+Description:  IPset administration utility
+
+Package: libiwinfo-data
+Version: 2022-11-01-00aab871-1
+Depends: libc
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo-data
+License: GPL-2.0
+Section: opt
+SourceDateEpoch: 1667322279
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 2127
+Filename: libiwinfo-data_2022-11-01-00aab871-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 2883
+SHA256sum: 3e7070b4975dd0fd8bc1e649f5eb5f9c579754fa12432c820c75bf3dd9d5a8c4
+Description:  libiwinfo Lua binding
+
+Package: libiwinfo20210430
+Version: 2022-11-01-00aab871-1
+Depends: libc, libnl-tiny2022-11-01, libuci20130104, libubus20220601, libiwinfo-data
+Provides: libiwinfo
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1667322279
+ABIVersion: 20210430
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 22010
+Filename: libiwinfo20210430_2022-11-01-00aab871-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 22820
+SHA256sum: d65b747634acd5278bf985bbc4c37b176930ccd846d4ca97b400bcf5bc8a489c
+Description:  Wireless information library with simplified API for nl80211
+ and wext driver interfaces.
+
+Package: libjson-c5
+Version: 0.16-2
+Depends: libc
+Provides: libjson-c
+Source: package/libs/libjson-c
+SourceName: libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1656959861
+ABIVersion: 5
+CPE-ID: cpe:/a:json-c_project:json-c
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 23334
+Filename: libjson-c5_0.16-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 24064
+SHA256sum: 9873afb457aa8fb982658d159e77f199025fc7e51b6342002a2ac69b64c174d3
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script20220927
+Version: 2022-09-27-ea560134-1
+Depends: libc, libubox20220927
+Provides: libjson-script
+Source: package/libs/libubox
+SourceName: libjson-script
+License: ISC
+Section: utils
+SourceDateEpoch: 1665745943
+ABIVersion: 20220927
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4234
+Filename: libjson-script20220927_2022-09-27-ea560134-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4990
+SHA256sum: e7be9842eccf953d5621e295aa1cd4ab256a6bdf8eefbdbde27024f4e9fe8a7b
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua5.1.5
+Version: 5.1.5-10
+Depends: libc
+Provides: liblua
+Source: package/utils/lua
+SourceName: liblua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+SourceDateEpoch: 1664984227
+ABIVersion: 5.1.5
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 60893
+Filename: liblua5.1.5_5.1.5-10_arm_cortex-a7_neon-vfpv4.ipk
+Size: 61565
+SHA256sum: 9378c4221a3d6b9dd0a4881a677274a6a8a3ba251a3f271d65a996f42489006e
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libmbedtls12
+Version: 2.28.1-5
+Depends: libc
+Provides: libmbedtls
+Source: package/libs/mbedtls
+SourceName: libmbedtls
+License: GPL-2.0-or-later
+LicenseFiles: gpl-2.0.txt
+Section: libs
+SourceDateEpoch: 1668594438
+ABIVersion: 12
+CPE-ID: cpe:/a:arm:mbed_tls
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 202454
+Filename: libmbedtls12_2.28.1-5_arm_cortex-a7_neon-vfpv4.ipk
+Size: 203063
+SHA256sum: 2bcaab13ae33381319a5abefd0ac20628b67612371fa5510c98bc298fb1a7cf0
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libmnl0
+Version: 1.0.5-1
+Depends: libc
+Provides: libmnl
+Source: package/libs/libmnl
+SourceName: libmnl
+License: LGPL-2.1+
+Section: libs
+SourceDateEpoch: 1662478604
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter:libmnl
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 5439
+Filename: libmnl0_1.0.5-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 6683
+SHA256sum: 610cb7b6bc25777f1a54a3b631113d05ab90b7b98cd69fcef632a21871085d3b
+Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel. The main features of this library are:
+ .
+ * Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ * Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ * Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building, validating,
+ parsing and sequence tracking, easier.
+ .
+ * Easy to re-use: you can use the library to build your own abstraction layer
+ on top of this library.
+ .
+ * Decoupling: the interdependency of the main bricks that compose the library
+ is reduced, i.e. the library provides many helpers, but the programmer is not
+ forced to use them.
+
+Package: libmount1
+Version: 2.38-2
+Depends: libc, libblkid1
+Provides: libmount
+Source: package/utils/util-linux
+SourceName: libmount
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+SourceDateEpoch: 1652625160
+ABIVersion: 1
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 122330
+Filename: libmount1_2.38-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 122810
+SHA256sum: e67b20af0b0842d29d381db7e3ec9f605e85d52335f774a11869df3fbf60f706
+Description:  The libmount library is used to parse /etc/fstab, /etc/mtab and
+ /proc/self/mountinfo files, manage the mtab file, evaluate mount options...
+
+Package: libncurses6
+Version: 6.3-2
+Depends: libc, terminfo
+Provides: libncursesw, libncurses, libncursesw6
+Source: package/libs/ncurses
+SourceName: libncurses
+License: MIT
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1666208423
+ABIVersion: 6
+CPE-ID: cpe:/a:gnu:ncurses
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 157743
+Filename: libncurses6_6.3-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 155738
+SHA256sum: eef7143b5e73a58bc53206a0cfef46f1f15562823ff07d8e2a38be48d9ee764b
+Description:  Terminal handling library (Unicode)
+
+Package: libnftnl11
+Version: 1.2.4-1
+Depends: libc, libmnl0
+Provides: libnftnl
+Source: package/libs/libnftnl
+SourceName: libnftnl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1668255316
+ABIVersion: 11
+CPE-ID: cpe:/a:netfilter:libnftnl
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 50391
+Filename: libnftnl11_1.2.4-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 51114
+SHA256sum: 29a9cd95367f77a5f614931d61c6ece66621c90191d45854663da2f244377841
+Description:  libnftnl is a userspace library providing a low-level netlink
+ programming interface (API) to the in-kernel nf_tables subsystem.
+
+Package: libnl-tiny2022-11-01
+Version: 2022-11-01-db3b2cdb-1
+Depends: libc
+Provides: libnl-tiny
+Source: package/libs/libnl-tiny
+SourceName: libnl-tiny
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1667322279
+ABIVersion: 2022-11-01
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 12704
+Filename: libnl-tiny2022-11-01_2022-11-01-db3b2cdb-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 13491
+SHA256sum: b6aac0a7053e254fad0bed8730d8ece66d4a1b7226f20f7912335d88cb06547f
+Description:  This package contains a stripped down version of libnl
+
+Package: libopenssl-conf
+Version: 1.1.1s-1
+Depends: libc, libopenssl1.1
+Source: package/libs/openssl
+SourceName: libopenssl-conf
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1667657266
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4470
+Filename: libopenssl-conf_1.1.1s-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5479
+SHA256sum: 43b0cf4992d1ec2f6a9c5735ca2bf416c9bd99aad14b928d32acc8c585c60c45
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package installs the OpenSSL configuration file /etc/ssl/openssl.cnf.
+
+Package: libopenssl1.1
+Version: 1.1.1s-1
+Depends: libc
+Provides: libopenssl
+Source: package/libs/openssl
+SourceName: libopenssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1667657266
+ABIVersion: 1.1
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 1107369
+Filename: libopenssl1.1_1.1.1s-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 1097010
+SHA256sum: 1a66588ee99b9c0b4711e5d3c73c3ab80831940a8c5d6ae1536188a40162ab44
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcre
+Version: 8.45-4
+Depends: libc
+Source: package/libs/pcre
+SourceName: libpcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+SourceDateEpoch: 1650110531
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 135332
+Filename: libpcre_8.45-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 136100
+SHA256sum: 13fd28ff055aaa7c1550d75363c52a7bc5dc60b1e825351c2c82bae4259360b6
+Description:  A Perl Compatible Regular Expression library
+
+Package: libreadline8
+Version: 8.2-1
+Depends: libc, libncursesw6
+Provides: libreadline
+Source: package/libs/readline
+SourceName: libreadline
+License: GPL-3.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1666541782
+ABIVersion: 8
+CPE-ID: cpe:/a:gnu:readline
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 127473
+Filename: libreadline8_8.2-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 127010
+SHA256sum: d9435d294dc21b7369d7c5ff39554bab1b4b5ba528d2b4cc8619f7560a51e2da
+Description:  The Readline library provides a set of functions for use by applications
+ that allow users to edit command lines as they are typed in. Both Emacs
+ and vi editing modes are available. The Readline library includes
+ additional functions to maintain a list of previously-entered command
+ lines, to recall and perhaps reedit those lines, and perform csh-like
+ history expansion on previous commands.
+
+Package: libsmartcols1
+Version: 2.38-2
+Depends: libc, librt
+Provides: libsmartcols
+Source: package/utils/util-linux
+SourceName: libsmartcols
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+SourceDateEpoch: 1652625160
+ABIVersion: 1
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 33836
+Filename: libsmartcols1_2.38-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 34692
+SHA256sum: d7b3a3832b3b76635fcecac03419fe8023324a2ae8cd8051eeb31267d260c0e5
+Description:  The smartcols library is used to print tables and trees in a pretty way.
+
+Package: libss2
+Version: 1.46.5-2
+Depends: libc, libcomerr0
+Provides: libss
+Source: package/utils/e2fsprogs
+SourceName: libss
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670364540
+ABIVersion: 2
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7775
+Filename: libss2_1.46.5-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8619
+SHA256sum: b79a9a354fbdcf7697024383e9b4a864da8482aea961d7fdc4a217a648b6574f
+Description:  This pacakge contains libss, a command-line interface parsing library
+ bundled with e2fsprogs.
+
+Package: libubox20220927
+Version: 2022-09-27-ea560134-1
+Depends: libc
+Provides: libubox
+Source: package/libs/libubox
+SourceName: libubox
+License: ISC
+Section: libs
+SourceDateEpoch: 1665745943
+ABIVersion: 20220927
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 18359
+Filename: libubox20220927_2022-09-27-ea560134-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 19107
+SHA256sum: 1a6100a7d470d5d86e927e3b9037df30bf8eb90b9506e959474e2f4218e0b936
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubus20220601, liblua5.1.5
+Source: package/system/ubus
+SourceName: libubus-lua
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1654119061
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6186
+Filename: libubus-lua_2022-06-01-2bebf93c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 6989
+SHA256sum: 714d9efdf7efb8f8c1dcf96e0feabc42c86b4516cbf6baced8ddf457f93b5ebd
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus20220601
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubox20220927
+Provides: libubus
+Source: package/system/ubus
+SourceName: libubus
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1654119061
+ABIVersion: 20220601
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 9108
+Filename: libubus20220601_2022-06-01-2bebf93c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9856
+SHA256sum: d6df53b96fc8dbbefef21e1096cff3e91d96fb3c0ec6ae244f6ed2fc99371ae6
+Description:  OpenWrt RPC client library
+
+Package: libuci20130104
+Version: 2021-10-22-f84f49f0-6
+Depends: libc, libubox20220927
+Provides: libuci
+Source: package/system/uci
+SourceName: libuci
+License: LGPL-2.1
+Section: libs
+SourceDateEpoch: 1634939511
+ABIVersion: 20130104
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 14980
+Filename: libuci20130104_2021-10-22-f84f49f0-6_arm_cortex-a7_neon-vfpv4.ipk
+Size: 15724
+SHA256sum: 65cb38ac9c51289480f3e1d0fa17060af04cd361ca28ddc0587f368b7590bf97
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient20201210
+Version: 2021-05-14-6a6011df-1
+Depends: libc, libubox20220927
+Provides: libuclient
+Source: package/libs/uclient
+SourceName: libuclient
+License: ISC
+Section: libs
+SourceDateEpoch: 1621028442
+ABIVersion: 20201210
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 8920
+Filename: libuclient20201210_2021-05-14-6a6011df-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9734
+SHA256sum: 0891dd011997313bd70dc46a190d83d45962cfcf8b52c6f2c525fc029db6bf33
+Description:  HTTP/1.1 client library
+
+Package: libucode20220812
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, libjson-c5
+Provides: libucode
+Source: package/utils/ucode
+SourceName: libucode
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+ABIVersion: 20220812
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 64754
+Filename: libucode20220812_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 65409
+SHA256sum: 7499157e3a03345729c06868dd27a5c0e3f7db2822a4d2ea0910e87fd0cb1419
+Description:  The libucode package provides the shared runtime library for the ucode interpreter.
+
+Package: libustream-openssl20201210
+Version: 2022-12-08-9217ab46-1
+Depends: libc, libubox20220927, libopenssl1.1
+Provides: libustream-openssl
+Source: package/libs/ustream-ssl
+SourceName: libustream-openssl
+License: ISC
+Section: libs
+SourceDateEpoch: 1670458646
+ABIVersion: 20201210
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3900
+Filename: libustream-openssl20201210_2022-12-08-9217ab46-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4679
+SHA256sum: 75f501b082e2618fc83d802a62ef33c634bd209624717a326356df9a173aac9f
+Description:  ustream SSL Library (openssl)
+
+Package: libustream-wolfssl20201210
+Version: 2022-12-08-9217ab46-1
+Depends: libc, libubox20220927, libwolfssl5.5.3.e624513f
+Conflicts: libustream-openssl
+Provides: libustream-wolfssl
+Source: package/libs/ustream-ssl
+SourceName: libustream-wolfssl
+License: ISC
+Section: libs
+SourceDateEpoch: 1670458646
+ABIVersion: 20201210
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3490
+Filename: libustream-wolfssl20201210_2022-12-08-9217ab46-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4274
+SHA256sum: 5cd0c145ead909ed08e8eb0b9ddffa08dd6651d5970f138aada78f6ff59edf78
+Description:  ustream SSL Library (wolfssl)
+
+Package: libuuid1
+Version: 2.38-2
+Depends: libc, librt
+Provides: libuuid
+Source: package/utils/util-linux
+SourceName: libuuid
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+SourceDateEpoch: 1652625160
+ABIVersion: 1
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 11451
+Filename: libuuid1_2.38-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 12419
+SHA256sum: 0f33d490c9dd390126f4ee9744347e2f124555c4ec5af8e0a2236798b994290b
+Description:  The UUID library is used to generate unique identifiers for objects
+ that may be accessible beyond the local system. This library
+ generates UUIDs compatible with those created by the Open Software
+ Foundation (OSF) Distributed Computing Environment (DCE) utility.
+
+Package: libwolfssl5.5.3.e624513f
+Version: 5.5.3-stable-3
+Depends: libc
+Conflicts: libwolfsslcpu-crypto
+Provides: libcyassl, libwolfssl, libcyassl5.5.3.e624513f
+Source: package/libs/wolfssl
+SourceName: libwolfssl
+License: GPL-2.0-or-later
+LicenseFiles: LICENSING COPYING
+Section: libs
+SourceDateEpoch: 1670725814
+ABIVersion: 5.5.3.e624513f
+CPE-ID: cpe:/a:wolfssl:wolfssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 476777
+Filename: libwolfssl5.5.3.e624513f_5.5.3-stable-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 474363
+SHA256sum: 49d9b4aabbf199916a3c92da8f5f7675837bc4e1b6a29276ae83a9c9ee4eab65
+Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
+ footprint, both on disk and for memory use.
+
+Package: logd
+Version: 2022-08-13-4c7b720b-1
+Depends: libc, libubox20220927, libubus20220601, libblobmsg-json20220927
+Source: package/system/ubox
+SourceName: logd
+License: GPL-2.0
+Section: base
+Require-User: logd=514:logd=514
+SourceDateEpoch: 1660416790
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 10359
+Filename: logd_2022-08-13-4c7b720b-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 11147
+SHA256sum: 3f1283776ca4385d441d13f6d1dcd434569a264ff8831f4f59708b2e9393df55
+Description:  OpenWrt system log implementation
+
+Package: lua
+Version: 5.1.5-10
+Depends: libc, liblua5.1.5
+Source: package/utils/lua
+SourceName: lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+SourceDateEpoch: 1664984227
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4608
+Filename: lua_5.1.5-10_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5471
+SHA256sum: bf4dbc10370cad6404dba38984e414b60b6360f9259870f336502beda0860967
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: mkf2fs
+Version: 1.15.0-1
+Depends: libc, libf2fs6
+Conflicts: mkf2fs-selinux
+Source: package/utils/f2fs-tools
+SourceName: mkf2fs
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: utils
+SourceDateEpoch: 1662478602
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 16515
+Filename: mkf2fs_1.15.0-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 17376
+SHA256sum: 012d58e88e2ef9d1f1b64927b8e98cb5b61b0b6dd4552e7c1893263b10917d9f
+Description:  Utility for creating a Flash-Friendly File System (F2FS)
+
+Package: netifd
+Version: 2022-08-25-76d2d41b-1
+Depends: libc, libuci20130104, libnl-tiny2022-11-01, libubus20220601, ubus, ubusd, jshn, libubox20220927
+Source: package/network/config/netifd
+SourceName: netifd
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1661454986
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 89779
+Filename: netifd_2022-08-25-76d2d41b-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 90370
+SHA256sum: c537522100b85232ef24bed48d7defe3c41ee8e47a0626bdc2f4d2f685185ab3
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: nftables-json
+Version: 1.0.5-2
+Depends: libc, kmod-nft-core, libnftnl11, jansson4
+Provides: nftables
+Source: package/network/utils/nftables
+SourceName: nftables-json
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1664211735
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 269519
+Filename: nftables-json_1.0.5-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 268950
+SHA256sum: 8e6401325b0fbde1afbe8451cda79435c27bdf0d46a8ffa2d652309f1e76e363
+Description:  nftables userspace utility with JSON support
+
+Package: odhcp6c
+Version: 2022-08-05-7d21e8d8-19
+Depends: libc, libubox20220927
+Source: package/network/ipv6/odhcp6c
+SourceName: odhcp6c
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1665335316
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 25987
+Filename: odhcp6c_2022-08-05-7d21e8d8-19_arm_cortex-a7_neon-vfpv4.ipk
+Size: 26726
+SHA256sum: b844da144b793ebf74c47d56e60d5a2bb504d2f7c6a4130baff151288956e9b3
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd-ipv6only
+Version: 2022-10-31-a92c0a73-1
+Depends: libc, libubox20220927, libuci20130104, libubus20220601, libnl-tiny2022-11-01
+Source: package/network/services/odhcpd
+SourceName: odhcpd-ipv6only
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1667235370
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 38353
+Filename: odhcpd-ipv6only_2022-10-31-a92c0a73-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 39339
+SHA256sum: b56f8496df8d4b7dc4ad7433f817791cff6304574acf3ba487d4db45820e24f0
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ This is a variant providing server services for RA, stateless and stateful
+ DHCPv6,  prefix delegation and can be used to relay RA, DHCPv6 and NDP between
+ routed (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: openssl-util
+Version: 1.1.1s-1
+Depends: libc, libopenssl1.1, libopenssl-conf
+Source: package/libs/openssl
+SourceName: openssl-util
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667657266
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 246632
+Filename: openssl-util_1.1.1s-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 244904
+SHA256sum: d4befc82c6199eca39d2df0c7b3d65cc611341943a62a2db84e6df2e873c2487
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: openwrt-keyring
+Version: 2022-03-25-62471e69-2
+Depends: libc
+Provides: lede-keyring
+Source: package/system/openwrt-keyring
+SourceName: openwrt-keyring
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1648214880
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 311
+Filename: openwrt-keyring_2022-03-25-62471e69-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 1094
+SHA256sum: 0b99d98f9449fbfa4a0d00c98ddace22ab45c54e479eaba840aeaea250747681
+Description:  The keyring of with the developer using and gpg public keys.
+
+Package: opkg
+Version: 2022-02-24-d038e5b6-1
+Depends: libc, uclient-fetch, libpthread, libubox20220927
+Source: package/system/opkg
+SourceName: opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+SourceDateEpoch: 1656284235
+Essential: yes
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 65298
+Filename: opkg_2022-02-24-d038e5b6-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 66342
+SHA256sum: 419120c2887fa892eda8db42e9569abca5d127a52384e46729cbd59c7336339e
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: partx-utils
+Version: 2.38-2
+Depends: libc, libblkid1, libsmartcols1
+Source: package/utils/util-linux
+SourceName: partx-utils
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+SourceDateEpoch: 1652625160
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 44507
+Filename: partx-utils_2.38-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 45247
+SHA256sum: a1627b4bc194cfa9c8d77296d7a992c1763b40563b9a2a1fc8aa87134c6c16b5
+Description:  contains partx, addpart, delpart
+
+Package: ppp-mod-pppoe
+Version: 2.4.9.git-2021-01-04-4
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+SourceName: ppp-mod-pppoe
+License: BSD-4-Clause
+Section: net
+SourceDateEpoch: 1664291802
+CPE-ID: cpe:/a:samba:ppp
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 10304
+Filename: ppp-mod-pppoe_2.4.9.git-2021-01-04-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 11071
+SHA256sum: de38ff4f9401b97e69ee2e1386b85f329f004d603937364d5c6469f802840875
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.9.git-2021-01-04-4
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+SourceName: ppp
+License: BSD-4-Clause
+Section: net
+SourceDateEpoch: 1664291802
+CPE-ID: cpe:/a:samba:ppp
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 123855
+Filename: ppp_2.4.9.git-2021-01-04-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 124432
+SHA256sum: 23e74407179f976a3d5a7484b3cb1a7e59aa4a081f15e7d3bd678ae6fa3df9be
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd-seccomp
+Version: 2022-11-10-039b88f7-2
+Depends: libc, libubox20220927, libblobmsg-json20220927
+Source: package/system/procd
+SourceName: procd-seccomp
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1668372670
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 14600
+Filename: procd-seccomp_2022-11-10-039b88f7-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 15258
+SHA256sum: 70d70fd69e1056d315daf84cd9f1b74cb77ad0039b7e4dead332d236ce5e6419
+Description:  OpenWrt process seccomp helper + utrace
+
+Package: procd-ujail
+Version: 2022-11-10-039b88f7-2
+Depends: libc, libubox20220927, libubus20220601, libuci20130104, libblobmsg-json20220927
+Source: package/system/procd
+SourceName: procd-ujail
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1668372670
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 42302
+Filename: procd-ujail_2022-11-10-039b88f7-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 42803
+SHA256sum: 169b1b149acd7ab7dbd51793cf5a44dd57ed4bc9b48774848a05667c7975ba2f
+Description:  OpenWrt process jail helper
+
+Package: procd
+Version: 2022-11-10-039b88f7-2
+Depends: libc, ubusd, ubus, libjson-script20220927, ubox, libubox20220927, libubus20220601, libblobmsg-json20220927, libjson-c5, jshn
+Conflicts: procd-selinux
+Source: package/system/procd
+SourceName: procd
+License: GPL-2.0
+Section: base
+Require-User: :dialout=20 :audio=29
+SourceDateEpoch: 1668372670
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 52644
+Filename: procd_2022-11-10-039b88f7-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 53184
+SHA256sum: b70ce3a56b7a238c3177e5638e91c59cc1c5e0993337acf962b4d418e116435b
+Description:  OpenWrt system process manager
+
+Package: px5g-wolfssl
+Version: 6.1
+Depends: libc, libwolfssl5.5.3.e624513f
+Provides: px5g
+Source: package/utils/px5g-wolfssl
+SourceName: px5g-wolfssl
+License: GPL-2.0-or-later
+Section: utils
+SourceDateEpoch: 1664812326
+Maintainer: Paul Spooren <mail@aparcar.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4547
+Filename: px5g-wolfssl_6.1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5383
+SHA256sum: 3ff08e0904f99fcc4d31cdd3dc30ab175242457420d4600128d6b342bb7409d2
+Description:  Px5g is a tiny X.509 certificate generator.
+ It suitable to create key files and certificates in DER
+ and PEM format for use with stunnel, uhttpd and others.
+
+Package: rpcd-mod-file
+Version: 2022-09-21-8c852b65-1
+Depends: libc, libubus20220601, libubox20220927, rpcd
+Source: package/system/rpcd
+SourceName: rpcd-mod-file
+License: ISC
+Section: utils
+SourceDateEpoch: 1665787188
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6307
+Filename: rpcd-mod-file_2022-09-21-8c852b65-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7186
+SHA256sum: fa2983e91009856758ab67456953e8ba51a37564d3090f67d7f90a96f14de435
+Description:  Provides ubus calls for file and directory operations.
+
+Package: rpcd-mod-iwinfo
+Version: 2022-09-21-8c852b65-1
+Depends: libc, libubus20220601, libubox20220927, rpcd, libiwinfo20210430
+Source: package/system/rpcd
+SourceName: rpcd-mod-iwinfo
+License: ISC
+Section: utils
+SourceDateEpoch: 1665787188
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7311
+Filename: rpcd-mod-iwinfo_2022-09-21-8c852b65-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8201
+SHA256sum: 9d1762ac9ff0a44f3dcf8fa15231eec29a0bbdc709e556e3a4df52ca324c6752
+Description:  Provides ubus calls for accessing iwinfo data.
+
+Package: rpcd-mod-rpcsys
+Version: 2022-09-21-8c852b65-1
+Depends: libc, libubus20220601, libubox20220927, rpcd
+Source: package/system/rpcd
+SourceName: rpcd-mod-rpcsys
+License: ISC
+Section: utils
+SourceDateEpoch: 1665787188
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 3449
+Filename: rpcd-mod-rpcsys_2022-09-21-8c852b65-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 4283
+SHA256sum: 527ace9d19c343d00b50b3a39e7aff5d8dcbcf11b10c279fb501ce65a402945c
+Description:  Provides ubus calls for sysupgrade and password changing.
+
+Package: rpcd-mod-ucode
+Version: 2022-09-21-8c852b65-1
+Depends: libc, libubus20220601, libubox20220927, rpcd, libucode20220812
+Source: package/system/rpcd
+SourceName: rpcd-mod-ucode
+License: ISC
+Section: utils
+SourceDateEpoch: 1665787188
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7413
+Filename: rpcd-mod-ucode_2022-09-21-8c852b65-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8294
+SHA256sum: 5d2fd5cfb419c175ce0ab5691810d3424938b803541bbfcfd5102c74c028da00
+Description:  Allows implementing plugins using ucode scripts.
+
+Package: rpcd
+Version: 2022-09-21-8c852b65-1
+Depends: libc, libubus20220601, libubox20220927, libuci20130104, libblobmsg-json20220927, libjson-c5
+Source: package/system/rpcd
+SourceName: rpcd
+License: ISC
+Section: utils
+SourceDateEpoch: 1665787188
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 22551
+Filename: rpcd_2022-09-21-8c852b65-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 23347
+SHA256sum: 3f66cbcae742652aef1a7c8c83174f7a2aae25667c9c2ae4d9213a77ad45e488
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: rtl8188eu-firmware
+Version: 20221109-4
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8188eu-firmware
+Section: firmware
+SourceDateEpoch: 1668626053
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 8284
+Filename: rtl8188eu-firmware_20221109-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9040
+SHA256sum: f373e0957d8203917acb22004029920181459787a66261d127e1bea3f2ca80b5
+Description:  RealTek RTL8188EU firmware
+
+Package: terminfo
+Version: 6.3-2
+Depends: libc
+Source: package/libs/ncurses
+SourceName: terminfo
+License: MIT
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1666208423
+CPE-ID: cpe:/a:gnu:ncurses
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7287
+Filename: terminfo_6.3-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8022
+SHA256sum: 185b1fe9f814802548a30d7e3ce17fb033eb909f163bd54fbffb02f577ffd4d2
+Description:  Terminal Info Database (ncurses)
+
+Package: ubox
+Version: 2022-08-13-4c7b720b-1
+Depends: libc, libubox20220927, ubusd, ubus, libubus20220601, libuci20130104
+Alternatives: 100:/sbin/rmmod:/sbin/kmodloader, 100:/sbin/insmod:/sbin/kmodloader, 100:/sbin/lsmod:/sbin/kmodloader, 100:/sbin/modinfo:/sbin/kmodloader, 100:/sbin/modprobe:/sbin/kmodloader
+Source: package/system/ubox
+SourceName: ubox
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1660416790
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 14937
+Filename: ubox_2022-08-13-4c7b720b-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 15759
+SHA256sum: dfe927e694fdf4885d86ce1d43410b1291c472005145ce6f75612a40e5728677
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubus20220601, libblobmsg-json20220927, ubusd
+Source: package/system/ubus
+SourceName: ubus
+License: LGPL-2.1
+Section: base
+SourceDateEpoch: 1654119061
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 5690
+Filename: ubus_2022-06-01-2bebf93c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 6444
+SHA256sum: 1f77b509d15c737853471eae88c4912392fb7242542860df16f6c386202aed54
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2022-06-01-2bebf93c-1
+Depends: libc, libubox20220927, libblobmsg-json20220927
+Source: package/system/ubus
+SourceName: ubusd
+License: LGPL-2.1
+Section: base
+Require-User: ubus=81:ubus=81
+SourceDateEpoch: 1654119061
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 10682
+Filename: ubusd_2022-06-01-2bebf93c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 11444
+SHA256sum: 23e904e87ce30a52641975f15680ab4bdb45b6fa5c6a0be5dd44caf14d496736
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2021-10-22-f84f49f0-6
+Depends: libc, libuci20130104
+Source: package/system/uci
+SourceName: uci
+License: LGPL-2.1
+Section: base
+SourceDateEpoch: 1634939511
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6822
+Filename: uci_2021-10-22-f84f49f0-6_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7620
+SHA256sum: 99cb2ead73f0a028d3a8b81b5887ba42ed61f3f2dbc7ef0d159610ff972bf638
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2021-05-14-6a6011df-1
+Depends: libc, libuclient20201210
+Provides: wget
+Alternatives: 200:/usr/bin/wget:/bin/uclient-fetch
+Source: package/libs/uclient
+SourceName: uclient-fetch
+License: ISC
+Section: net
+SourceDateEpoch: 1621028442
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7426
+Filename: uclient-fetch_2021-05-14-6a6011df-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8251
+SHA256sum: 2d410be0e5d6911be86a4eb9891d01dc2432c301c842fe7e7321e770ee413ddf
+Description:  Tiny wget replacement using libuclient
+
+Package: ucode-mod-fs
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, ucode
+Source: package/utils/ucode
+SourceName: ucode-mod-fs
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 8530
+Filename: ucode-mod-fs_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 9255
+SHA256sum: dadb1255ed1b706dd6643d4fe489c7b18a659b6e253a42c0734e5d450ebded53
+Description:  The filesystem plugin module allows interaction with the local file system.
+
+Package: ucode-mod-math
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, ucode
+Source: package/utils/ucode
+SourceName: ucode-mod-math
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 2315
+Filename: ucode-mod-math_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 3069
+SHA256sum: 8ebb5b15bcbb2a0aee3937626e9c61a4fc3258805248505b5bd846fad00abf05
+Description:  The math plugin provides access to various <math.h> procedures.
+
+Package: ucode-mod-ubus
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, ucode, libubus20220601, libblobmsg-json20220927
+Source: package/utils/ucode
+SourceName: ucode-mod-ubus
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 12196
+Filename: ucode-mod-ubus_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 12968
+SHA256sum: dce87cf505d0633e947cef372f15b8fc9ea3bcf3ecb3958d4615d413b30b7095
+Description:  The ubus module allows ucode template scripts to enumerate and invoke ubus
+ procedures.
+
+Package: ucode-mod-uci
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, ucode, libuci20130104
+Source: package/utils/ucode
+SourceName: ucode-mod-uci
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6273
+Filename: ucode-mod-uci_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7091
+SHA256sum: dec79cad4add083eab9a3df5d0c8e0c68ea052fc25498d56e69fb43e8e80febc
+Description:  The uci module allows templates to read and modify uci configuration.
+
+Package: ucode
+Version: 2022-12-02-46d93c9c-1
+Depends: libc, libucode20220812
+Source: package/utils/ucode
+SourceName: ucode
+License: ISC
+Section: utils
+SourceDateEpoch: 1670323386
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 6381
+Filename: ucode_2022-12-02-46d93c9c-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 7186
+SHA256sum: c91abcb9cb8cc6229cbba996eb80fc5f59ace4d5a92449e7def61aa83c732a8f
+Description:  ucode is a tiny script interpreter featuring an ECMAScript oriented
+ script language and Jinja-inspired templating.
+
+Package: uhttpd-mod-ubus
+Version: 2022-08-12-e3395cd9-3
+Depends: libc, uhttpd, libubus20220601, libblobmsg-json20220927
+Source: package/network/services/uhttpd
+SourceName: uhttpd-mod-ubus
+License: ISC
+Section: net
+SourceDateEpoch: 1667575260
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 7431
+Filename: uhttpd-mod-ubus_2022-08-12-e3395cd9-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8279
+SHA256sum: 77fd216ed58931ecba168914438a6c5294fb6a21dc18a7426656015575c49464
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2022-08-12-e3395cd9-3
+Depends: libc, libubox20220927, libblobmsg-json20220927, libjson-script20220927, libjson-c5
+Source: package/network/services/uhttpd
+SourceName: uhttpd
+License: ISC
+Section: net
+SourceDateEpoch: 1667575260
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 26274
+Filename: uhttpd_2022-08-12-e3395cd9-3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 27070
+SHA256sum: c847a95542e96f8192a3e8a88dc3132433385f0e21499da9d09ce0d980176d87
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: urandom-seed
+Version: 3
+Depends: libc, getrandom
+Source: package/system/urandom-seed
+SourceName: urandom-seed
+License: GPL-2.0-only
+Section: base
+SourceDateEpoch: 1649923954
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 827
+Filename: urandom-seed_3_arm_cortex-a7_neon-vfpv4.ipk
+Size: 1559
+SHA256sum: dd55d7c740462afa6ea354fa279dffd52bbb61141c2034f15bd76ea149b23070
+Description:  /etc/urandom.seed handling for OpenWrt
+
+Package: urngd
+Version: 2020-01-21-c7f7b6b6-1
+Depends: libc, libubox20220927
+Source: package/system/urngd
+SourceName: urngd
+License: GPL-2.0 BSD-3-Clause
+Section: utils
+SourceDateEpoch: 1624171499
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 4950
+Filename: urngd_2020-01-21-c7f7b6b6-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 5932
+SHA256sum: c2f7c12e0529aa28e362cdb5de402ebfe8c73802108809afea46ddc4c5b6eaf1
+Description:  urngd is OpenWrt's micro non-physical true random number generator based on
+ timing jitter.
+ 
+ Using the Jitter RNG core, the rngd provides an entropy source that feeds into
+ the Linux /dev/random device if its entropy runs low. It updates the
+ /dev/random entropy estimator such that the newly provided entropy unblocks
+ /dev/random.
+ 
+ The seeding of /dev/random also ensures that /dev/urandom benefits from
+ entropy. Especially during boot time, when the entropy of Linux is low, the
+ Jitter RNGd provides a source of sufficient entropy.
+
+Package: usign
+Version: 2020-05-23-f1f65026-1
+Depends: libc, libubox20220927
+Source: package/system/usign
+SourceName: usign
+License: ISC
+Section: base
+SourceDateEpoch: 1590233892
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 11014
+Filename: usign_2020-05-23-f1f65026-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 11776
+SHA256sum: 00e5713f603be5e55472797473f8cced008c62ee6603f3d8263c550adbd25c24
+Description:  OpenWrt signature verification utility
+
+Package: wireless-regdb
+Version: 2022.08.12-1
+Depends: libc
+Source: package/firmware/wireless-regdb
+SourceName: wireless-regdb
+Section: firmware
+SourceDateEpoch: 1663449403
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: all
+Installed-Size: 2195
+Filename: wireless-regdb_2022.08.12-1_all.ipk
+Size: 2911
+SHA256sum: 18806a103bc2d002b5029b0519fdcc8c125b745a444c571e5b0447bab1dc89ac
+Description:  Wireless Regulatory Database
+
+Package: zlib
+Version: 1.2.13-1
+Depends: libc
+Source: package/libs/zlib
+SourceName: zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+SourceDateEpoch: 1668368877
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 37973
+Filename: zlib_1.2.13-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 38746
+SHA256sum: e0c9b8b405a0cf4965567187f3bfd355fb8a07daf3787b90571a22ba26f1bd11
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+
