@@ -1,0 +1,22 @@
+Source-Makefile: feeds/NueXini/app-store-ui/Makefile
+Build-Types: host
+
+Package: app-store-ui
+Version: 1.0-10
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: App Store UI
+Maintainer: 
+Source: 
+Type: ipkg
+Build-Only: 1
+Description:  UI for luci-app-store
+
+@@
+
+

@@ -1,0 +1,64 @@
+	config FEED_packages
+		tristate "Enable feed packages"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"packages\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_luci
+		tristate "Enable feed luci"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"luci\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_routing
+		tristate "Enable feed routing"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"routing\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_telephony
+		tristate "Enable feed telephony"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"telephony\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_store
+		tristate "Enable feed store"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"store\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_third
+		tristate "Enable feed third"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"third\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_NueXini
+		tristate "Enable feed NueXini"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"NueXini\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+
+	config FEED_compat
+		tristate "Enable feed compat"
+		depends on PER_FEED_REPO
+		default y
+		help
+		 Enable the \"compat\" feed in opkg distfeeds.conf.
+		 Say M to add the feed commented out.
+

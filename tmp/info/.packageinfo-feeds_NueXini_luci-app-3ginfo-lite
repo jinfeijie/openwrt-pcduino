@@ -1,0 +1,99 @@
+Source-Makefile: package/feeds/NueXini/luci-app-3ginfo-lite/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-3ginfo-lite
+Submenu: 3. Applications
+Version: 1.0.54-20230903
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sms-tool +comgt +kmod-usb-serial-option
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: LuCI JS Support for 3ginfo-lite
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description:    LuCI JS interface for the 3ginfo-lite. The package allows you to view the parameters of the mobile internet connection.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-3ginfo-lite-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-3ginfo-lite
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: luci-app-3ginfo-lite - de translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-3ginfo-lite - Deutsch (German)
+
+@@
+
+Package: luci-i18n-3ginfo-lite-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-3ginfo-lite
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: luci-app-3ginfo-lite - it translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-3ginfo-lite - Italiano (Italian)
+
+@@
+
+Package: luci-i18n-3ginfo-lite-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-3ginfo-lite
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: luci-app-3ginfo-lite - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-3ginfo-lite - Polski (Polish)
+
+@@
+
+Package: luci-i18n-3ginfo-lite-template
+Default: LUCI_LANG_template||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-3ginfo-lite
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: luci-app-3ginfo-lite - template translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-3ginfo-lite - 
+
+@@
+
+

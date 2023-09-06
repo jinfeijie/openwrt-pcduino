@@ -1,0 +1,84 @@
+Source-Makefile: package/feeds/packages/ffmpeg-mpp/Makefile
+
+Package: ffmpeg-mpp
+Version: 5.1.git-2023-06-15-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @aarch64 @!ALL +libpthread +libffmpeg-mpp
+Conflicts: 
+Menu-Depends: 
+Provides: ffmpeg
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: FFmpeg for rockchip SoC program
+Maintainer: 
+Source: ffmpeg-mpp-5.1.git-2023-06-15.tar.gz
+Type: ipkg
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+
+ This is a rockchip mpp variant.
+ .
+ This package contains the FFmpeg command line tool.
+https://github.com/JeffyCN/FFmpeg
+
+@@
+
+Package: ffprobe-mpp
+Version: 5.1.git-2023-06-15-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @aarch64 @!ALL +libpthread +libffmpeg-mpp
+Conflicts: 
+Menu-Depends: 
+Provides: ffprobe
+Section: multimedia
+Category: Multimedia
+Repository: packages
+Title: FFmpeg for rockchip SoC CLI media identifier
+Maintainer: 
+Source: ffmpeg-mpp-5.1.git-2023-06-15.tar.gz
+Type: ipkg
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+
+ This is a rockchip mpp variant.
+ .
+ This package contains the FFprobe command line tool.
+https://github.com/JeffyCN/FFmpeg
+
+@@
+
+Package: libffmpeg-mpp
+Version: 5.1.git-2023-06-15-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @aarch64 @!ALL +libpthread +zlib +libbz2 +AUDIO_SUPPORT:alsa-lib +libgnutls +libopus +SOFT_FLOAT:shine +!SOFT_FLOAT:lame-lib +libx264 +rkmpp +rkrga +libdrm +fdk-aac
+Conflicts: 
+Menu-Depends: 
+Provides: libffmpeg
+Section: libs
+Category: Libraries
+Repository: packages
+Title: FFmpeg for rockchip SoC libraries (full)
+Maintainer: 
+Source: ffmpeg-mpp-5.1.git-2023-06-15.tar.gz
+Type: ipkg
+Description:  FFmpeg is a a software package that can record, convert and stream digital
+ audio and video in numerous formats.
+
+ FFmpeg licensing / patent issues are complex. It is the reponsibility of the
+ user to understand any requirements in this regard with its usage. See:
+ https://ffmpeg.org/legal.html for further information.
+
+ This is a rockchip mpp variant.
+ .
+ This package contains full-featured FFmpeg shared libraries.
+https://github.com/JeffyCN/FFmpeg
+
+@@
+
+

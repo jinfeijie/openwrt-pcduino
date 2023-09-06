@@ -1,0 +1,20 @@
+Source-Makefile: package/realtek/openmax/Makefile
+
+Package: openmax
+Submenu: Realtek
+Version: 2016-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_realtek_rtd129x +libstdcpp +libpthread +kmod-openmax
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Title: Realtek OpenMAX libraries
+Maintainer: 
+Source: openmax_2016-1.tar.gz
+Type: ipkg
+Description:  Realtek OpenMAX libraries and various daemons
+
+@@
+
+

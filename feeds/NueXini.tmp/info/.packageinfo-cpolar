@@ -1,0 +1,22 @@
+Source-Makefile: feeds/NueXini/cpolar/Makefile
+
+Package: cpolar
+Version: 3.2.86.16-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||mipsel||mipsle||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Cpolar Penetration Tool
+Maintainer: cpolar.com
+Source: cpolar-stable-linux-.tar.gz
+License: MIT
+Type: ipkg
+Description: It is a safe intranet penetration tool. It can easily publish the internal website to the public website.
+https://www.cpolar.com/
+cpolar.com
+@@
+
+

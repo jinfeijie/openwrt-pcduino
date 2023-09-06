@@ -1,0 +1,61 @@
+Source-Makefile: feeds/third/luci-theme-argon/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-theme-argon
+Submenu: 4. Themes
+Version: 2.2.10.8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +jsonfilter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Argon Theme
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: Argon Theme
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-argon-template
+Default: LUCI_LANG_template||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-theme-argon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-theme-argon - template translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-theme-argon - 
+
+@@
+
+Package: luci-i18n-argon-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-theme-argon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-theme-argon - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-theme-argon - 简体中文 (Chinese Simplified)
+
+@@
+
+

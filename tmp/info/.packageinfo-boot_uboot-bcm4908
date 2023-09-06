@@ -1,0 +1,24 @@
+Source-Makefile: package/boot/uboot-bcm4908/Makefile
+
+Package: u-boot-bcm4908
+Default: y
+Version: 2022-03-03-92e9eca819c9c898d9d2010e1a217726c42c8c47-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_bcm4908
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: bcm4908
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for Broadcom's BCM4908
+Maintainer: 
+Source: u-boot-2022-03-03-92e9eca819c9c898d9d2010e1a217726c42c8c47.tar.xz
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Description: U-Boot for Broadcom's BCM4908
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+

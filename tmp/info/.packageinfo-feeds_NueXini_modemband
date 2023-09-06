@@ -1,0 +1,20 @@
+Source-Makefile: package/feeds/NueXini/modemband/Makefile
+
+Package: modemband
+Version: 20230904
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sms-tool
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: NueXini
+Title: Setting LTE bands for selected modems
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Source: 
+Type: ipkg
+Description: Setting LTE bands for selected modems
+Cezary Jackiewicz <cezary@eko.one.pl>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/diy/ntfs3-oot/Makefile
+
+Package: kmod-fs-ntfs3-oot
+Submenu: Filesystems
+Version: <LINUX_VERSION>+2021-07-05-3
+Depends: @!LINUX_5_15 +kmod-nls-utf8
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Fully functional NTFS Read-Write driver
+Maintainer: 
+Source: ntfs3-oot-2021-07-05.tar.gz
+License: GPL-2.0-only
+Type: ipkg
+Description:   This package provides the kernel module for ntfs3.
+
+@@
+
+

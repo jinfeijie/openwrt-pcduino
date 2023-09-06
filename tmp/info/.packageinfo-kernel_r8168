@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/r8168/Makefile
+
+Package: kmod-r8168
+Submenu: Network Devices
+Version: <LINUX_VERSION>+8.051.02-1
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Driver for Realtek r8168 chipsets
+Maintainer: 
+Source: r8168-8.051.02.tar.gz
+Type: ipkg
+Description:   This package contains a driver for Realtek RTL8168/RTL8111/RTL8411 PCIe GBE Family Controller.
+
+@@
+
+

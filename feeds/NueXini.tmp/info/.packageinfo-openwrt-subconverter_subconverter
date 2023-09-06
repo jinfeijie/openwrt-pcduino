@@ -1,0 +1,24 @@
+Source-Makefile: feeds/NueXini/openwrt-subconverter/subconverter/Makefile
+Build-Depends: rapidjson toml11 quickjspp libcron
+
+Package: subconverter
+Version: 0.7.2-2023-01-13-3813c3925357abca7f5009d69f07281e738d837f-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libstdcpp +libevent2 +libyaml-cpp +libpcre2 +libcurl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Proxy subscription formats converter
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: subconverter-0.7.2-2023-01-13-3813c3925357abca7f5009d69f07281e738d837f.tar.xz
+License: GPL-3.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   subconverter is a utility to convert between various proxy subscription formats.
+https://github.com/tindy2013/subconverter
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

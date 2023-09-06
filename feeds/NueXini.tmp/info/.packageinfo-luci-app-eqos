@@ -1,0 +1,57 @@
+Source-Makefile: feeds/NueXini/luci-app-eqos/Makefile
+
+Package: eqos
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +tc +kmod-sched-core +kmod-ifb
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Easy QoS(Support speed limit based on IP address)
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
+Source: 
+Type: ipkg
+Description: Easy QoS(Support speed limit based on IP address)
+Jianhui Zhao <jianhuizhao329@gmail.com>
+@@
+
+Package: luci-app-eqos
+Submenu: 3. Applications
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-base +eqos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: EQOS - LuCI interface
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
+Source: 
+Type: ipkg
+Description: 	Luci interface for the eqos.
+Jianhui Zhao <jianhuizhao329@gmail.com>
+@@
+
+Package: luci-i18n-eqos-zh-cn
+Default: LUCI_LANG_zh-cn
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-eqos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-eqos - zh-cn translation
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description: luci-app-eqos - zh-cn translation
+Jianhui Zhao <jianhuizhao329@gmail.com>
+@@
+
+

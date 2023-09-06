@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/NueXini/openwrt-nezha/Makefile
+
+Package: nezha-agent
+Version: 1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: NueXini
+Title: Nezha Agent is the client of the Nezha panel
+Maintainer: 
+Source: nezha-agent_linux_.zip
+Type: ipkg
+Description: Nezha Agent is the client of the Nezha panel
+https://github.com/naiba/nezha/
+
+@@
+
+

@@ -1,0 +1,25 @@
+Source-Makefile: feeds/NueXini/homebox/Makefile
+Build-Depends: golang/host homebox/host
+Build-Types: host
+
+Package: homebox
+Menu: 1
+Submenu: Web Servers/Proxies
+Version: 0.0.0-dev.2020062901-14
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A Toolbox for Home Local Networks
+Maintainer: 
+Source: homebox-0.0.0-dev.2020062901.tar.gz
+Type: ipkg
+Description:   A Toolbox for Home Local Networks Speed Test
+https://github.com/XGHeaven/homebox
+
+@@
+
+

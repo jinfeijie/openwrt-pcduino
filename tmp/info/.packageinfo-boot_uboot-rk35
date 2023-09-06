@@ -1,0 +1,26 @@
+Source-Makefile: package/boot/uboot-rk35/Makefile
+Build-Depends: arm-trusted-firmware-rockchip-vendor
+
+Package: u-boot-easepi-rk3568
+Default: y
+Version: 2017.09-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK +PACKAGE_u-boot-easepi-rk3568:arm-trusted-firmware-rk3568 @TARGET_rockchip_rk3568
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: easepi-rk3568
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for RK3568 Generic
+Maintainer: jjm2473
+Source: u-boot-2017.09.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: 1
+Description: U-Boot for RK3568 Generic
+http://www.denx.de/wiki/U-Boot
+jjm2473
+@@
+
+

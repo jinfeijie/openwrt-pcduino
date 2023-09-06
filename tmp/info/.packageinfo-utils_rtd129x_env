@@ -1,0 +1,19 @@
+Source-Makefile: package/utils/rtd129x_env/Makefile
+
+Package: rtd129x_env
+Version: 1.1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_realtek_rtd129x +busybox
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: RTD129x Factory tools
+Maintainer: 
+Source: 
+Type: ipkg
+Description:  RTD129x Factory tools
+
+@@
+
+

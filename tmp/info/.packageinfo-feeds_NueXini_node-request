@@ -1,0 +1,25 @@
+Source-Makefile: package/feeds/NueXini/node-request/Makefile
+Build-Depends: node/host
+
+Package: node-request
+Submenu: Node.js
+Version: 2.88.2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +node
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: NueXini
+Title: Request is designed to be the simplest way possible to make http calls
+Maintainer: Jerrykuku <jerrykuku@gmail.com>
+Source: request-2.88.2.tgz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:  Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+https://www.npmjs.org/package/request
+Jerrykuku <jerrykuku@gmail.com>
+@@
+
+

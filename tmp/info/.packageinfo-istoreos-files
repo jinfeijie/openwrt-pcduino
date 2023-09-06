@@ -1,0 +1,22 @@
+Source-Makefile: package/istoreos-files/Makefile
+
+Package: istoreos-files
+Default: y
+Version: 1.0-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-theme-argon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Title: iStoreOS files
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+License: CC0-1.0
+Type: ipkg
+Hidden: y
+Description:  The iStoreOS.
+jjm2473 <jjm2473@gmail.com>
+@@
+
+

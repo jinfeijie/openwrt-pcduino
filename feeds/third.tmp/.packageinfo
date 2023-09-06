@@ -1,0 +1,521 @@
+Source-Makefile: feeds/third/ddns-scripts_aliyun/Makefile
+
+Package: ddns-scripts_aliyun
+Submenu: IP Addresses and Names
+Version: 1.0.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ddns-scripts +wget-ssl +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: DDNS extension for AliYun.com
+Maintainer: Sense <sensec@gmail.com>
+Source: 
+License: GPLv2
+Type: ipkg
+Description: 	Dynamic DNS Client scripts extension for AliYun.com
+Sense <sensec@gmail.com>
+@@
+
+
+Source-Makefile: feeds/third/luci-app-argon-config/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-argon-config
+Submenu: 3. Applications
+Version: 0.9
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-compat
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI page for Argon Config
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI page for Argon Config
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-argon-config-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-argon-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-argon-config - es translation
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-argon-config - Español (Spanish)
+jerrykuku <jerrykuku@qq.com>
+@@
+
+Package: luci-i18n-argon-config-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-argon-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-argon-config - zh-cn translation
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
+jerrykuku <jerrykuku@qq.com>
+@@
+
+Package: luci-i18n-argon-config-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-argon-config
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-argon-config - zh-cn translation
+Maintainer: jerrykuku <jerrykuku@qq.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
+jerrykuku <jerrykuku@qq.com>
+@@
+
+
+Source-Makefile: feeds/third/luci-app-autotimeset/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-autotimeset
+Submenu: 3. Applications
+Version: 1.5-20220426
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for Scheduled Time setting
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for Scheduled Time setting
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-autotimeset-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-autotimeset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-autotimeset - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-autotimeset - 简体中文 (Chinese Simplified)
+
+@@
+
+Package: luci-i18n-autotimeset-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-autotimeset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-autotimeset - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-autotimeset - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-app-baidupcs-web/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-baidupcs-web
+Submenu: 3. Applications
+Version: 1.0-6
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +baidupcs-web +wget +openssl-util
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for BaiduPCS-Go
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for BaiduPCS-Go
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+
+Source-Makefile: feeds/third/luci-app-cifs-mount/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-cifs-mount
+Submenu: 3. Applications
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +mount-utils +kmod-fs-cifs +kmod-nls-utf8 +davfs2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for SMB/CIFS,WebDAV Mount
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI for SMB/CIFS,WebDAV Mount
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-cifs-mount-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-cifs-mount
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cifs-mount - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cifs-mount - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-app-filetransfer/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-filetransfer
+Submenu: 3. Applications
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-fs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI page for IPK upload
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI page for IPK upload
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-filetransfer-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-filetransfer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-filetransfer - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-filetransfer - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-app-nfs/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-nfs
+Submenu: 3. Applications
+Version: 1.1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +nfs-utils +nfs-kernel-server +nfs-kernel-server-utils +mount-utils
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI support for nfs
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI support for nfs
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-nfs-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-nfs
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-nfs - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-nfs - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-app-tn-netports/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-tn-netports
+Submenu: 3. Applications
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luabitop
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Network ports status LuCI application
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: Network ports status LuCI application
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-tn-netports-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tn-netports
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-tn-netports - ru translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-tn-netports - Русский (Russian)
+
+@@
+
+Package: luci-i18n-tn-netports-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-tn-netports
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-tn-netports - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-tn-netports - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-app-vlmcsd/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-vlmcsd
+Submenu: 3. Applications
+Version: 1.0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +vlmcsd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI page for KMS
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI page for KMS
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-vlmcsd-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-vlmcsd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vlmcsd - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vlmcsd - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/luci-lib-fs/Makefile
+
+Package: luci-lib-fs
+Submenu: Lua
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +luci-lib-nixio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: luci-lib-fs
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   luci-lib-fs
+https://github.com/lbthomsen/openwrt-luci
+
+@@
+
+
+Source-Makefile: feeds/third/luci-theme-argon/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-theme-argon
+Submenu: 4. Themes
+Version: 2.2.10.8
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +jsonfilter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Argon Theme
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: Argon Theme
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-argon-template
+Default: LUCI_LANG_template||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-theme-argon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-theme-argon - template translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-theme-argon - 
+
+@@
+
+Package: luci-i18n-argon-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-theme-argon
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-theme-argon - zh-cn translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-theme-argon - 简体中文 (Chinese Simplified)
+
+@@
+
+
+Source-Makefile: feeds/third/vlmcsd/Makefile
+
+Package: vlmcsd
+Version: svn1113-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: vlmcsd for OpenWRT
+Maintainer: fuyumi <280604399@qq.com>
+Source: vlmcsd-svn1113.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: 	vlmcsd is a KMS Emulator in C.
+http://forums.mydigitallife.info/threads/50234
+fuyumi <280604399@qq.com>
+@@
+
+

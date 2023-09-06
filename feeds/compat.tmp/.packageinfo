@@ -1,0 +1,39 @@
+Source-Makefile: feeds/compat/compat/dummy-common/Makefile
+
+Package: kmod-ipt-socket
+Submenu: Common modules
+Version: 0.00-0
+Depends: +kmod-ipt-tproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: dummy
+Category: Dummy
+Repository: base
+Title: compatible for kmod-ipt-socket
+Maintainer: 
+Source: 
+Type: ipkg
+Description: compatible for kmod-ipt-socket
+
+@@
+
+Package: iptables-mod-socket
+Submenu: Common modules
+Version: 0.00-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables-mod-tproxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: dummy
+Category: Dummy
+Repository: base
+Title: compatible for iptables-mod-socket
+Maintainer: 
+Source: 
+Type: ipkg
+Description: compatible for iptables-mod-socket
+
+@@
+
+

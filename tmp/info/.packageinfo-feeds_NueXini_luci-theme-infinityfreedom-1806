@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/NueXini/luci-theme-infinityfreedom-1806/Makefile
+
+Package: luci-theme-infinityfreedom
+Submenu: 4. Themes
+Version: 1.5.20220504-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: Infinity Freedom Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Infinity Freedom Theme
+https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+
+@@
+
+

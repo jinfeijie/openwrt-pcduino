@@ -1,0 +1,21 @@
+Source-Makefile: feeds/NueXini/luci-app-airwhu/Makefile
+
+Package: luci-app-airwhu
+Submenu: 3. Applications
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +mentohust +kmod-ipt-nat6
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-airwhu
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	 LuCI web-interface for Ruijie 802.1X Client with IPv6 NAT.
+
+@@
+
+

@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/NueXini/rapidjson/Makefile
+
+Package: rapidjson
+Version: 2023-01-12-012be8528783cdbf4b7a9e64f78bd8f056b97e24-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lib
+Category: Libraries
+Repository: NueXini
+Title: rapidjson JSON parser/generator for C++
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: rapidjson-2023-01-12-012be8528783cdbf4b7a9e64f78bd8f056b97e24.tar.xz
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A fast JSON parser/generator for C++ with both SAX/DOM style API
+https://github.com/Tencent/rapidjson
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/boot/rtk-rescue-firmware/Makefile
+
+Package: rtk-rescue-firmware
+Default: y if TARGET_realtek_rtd129x
+Version: 2-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_realtek
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: realtek rescue system
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: rtk-rescue-firmware_2.tar.gz
+License: CC0-1.0
+Type: bin
+Hidden: y
+Description:  This package contains realtek rescue system.
+jjm2473 <jjm2473@gmail.com>
+@@
+
+

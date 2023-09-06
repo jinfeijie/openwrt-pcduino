@@ -1,0 +1,41 @@
+Source-Makefile: feeds/packages/multimedia/rkmpp/Makefile
+
+Package: rkmpp
+Version: 2023-06-12-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @aarch64 +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: Rockchip MPP
+Maintainer: 
+Source: rkmpp-2023-06-12.tar.gz
+Type: ipkg
+Description:  Rockchip Media Process Platform (MPP)
+https://github.com/JeffyCN/mirrors/tree/mpp-dev
+
+@@
+
+Package: rkmpp-demo
+Version: 2023-06-12-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +rkmpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: multimedia
+Category: Multimedia
+Repository: base
+Title: Rockchip MPP Demo
+Maintainer: 
+Source: rkmpp-2023-06-12.tar.gz
+Type: ipkg
+Description:  Rockchip Media Process Platform (MPP)
+
+This package provides the demo.
+https://github.com/JeffyCN/mirrors/tree/mpp-dev
+
+@@
+
+

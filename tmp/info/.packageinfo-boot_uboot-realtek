@@ -1,0 +1,25 @@
+Source-Makefile: package/boot/uboot-realtek/Makefile
+
+Package: u-boot-rtd1296
+Default: y
+Version: 2015.07-11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @!IN_SDK @TARGET_realtek_rtd129x
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: rtd1296
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for RTD1296
+Maintainer: 
+Source: u-boot-2015.07.tar.bz2
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Type: bin
+Hidden: y
+Description: U-Boot for RTD1296
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+

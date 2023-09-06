@@ -1,0 +1,104 @@
+Source-Makefile: target/linux/realtek/Makefile
+Target: realtek
+Target-Board: realtek
+Target-Name: Realtek SoC
+Target-Arch: 
+Target-Arch-Packages: 
+Target-Features: dt fpu gpio pci pcie rootfs-part rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: 
+Linux-Version: 4.9.282
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware images for RTD1xxx based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd istoreos-files dnsmasq firewall ip6tables iptables kmod-ipt-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe e2fsprogs libustream-openssl 
+Target: realtek/rtd129x
+Target-Board: realtek
+Target-Name: RTD129x NAS
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_cortex-a53
+Target-Features: dt ext4 fpu gpio pci pcie rootfs-part rtc squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=cortex-a53
+CPU-Type: cortex-a53
+Linux-Version: 4.9.282
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build NAS firmware image for Realtek RTD129x SoC boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd istoreos-files rtk-init rtd129x_env e2fsprogs resize2fs ethtool mkf2fs partx-utils block-mount openssl-util dnsmasq firewall ip6tables iptables odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe luci-app-store e2fsprogs libustream-openssl 
+Target-Profile: DEVICE_ars2
+Target-Profile-Name: ARS2 4GB
+Target-Profile-Packages: rtk-init rtd129x_env blkid mount-utils e2fsprogs tune2fs resize2fs mkf2fs busybox openssl-util curl kmod-ifb kmod-macvlan kmod-tun kmod-veth kmod-pppoe kmod-usb-storage-uas kmod-ata-ahci ntfs3-mount ntfsprogs libustream-openssl ca-bundle ca-certificates luci-lib-ipkg ipset kmod-input-gpio-keys kmod-input-gpio-keys-polled kmod-gpio-button-hotplug kmod-hwmon-gpiofan kmod-leds-gpio luci-theme-material luci-app-cifs-mount luci-app-cpufreq luci-app-diskman luci-app-dockerman docker dockerd cgroupfs-mount luci-app-filetransfer luci-app-hd-idle luci-app-samba4 luci-app-sqm luci-app-ttyd luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn luci-i18n-wol-zh-cn luci-i18n-upnp-zh-cn luci-i18n-ddns-zh-cn luci-i18n-vlmcsd-zh-cn luci-i18n-timecontrol-zh-cn luci-i18n-cifs-mount-zh-cn luci-i18n-cpufreq-zh-cn luci-i18n-dockerman-zh-cn luci-i18n-filetransfer-zh-cn luci-i18n-hd-idle-zh-cn luci-i18n-samba4-zh-cn luci-i18n-ttyd-zh-cn
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: ars2
+
+
+Target-Profile-Description:
+Build firmware images for ARS2 4GB
+
+
+
+@@
+
+Target-Profile: DEVICE_bpi-w2
+Target-Profile-Name: Bananapi W2
+Target-Profile-Packages: rtk-init rtd129x_env blkid mount-utils e2fsprogs tune2fs resize2fs mkf2fs busybox openssl-util curl kmod-ifb kmod-macvlan kmod-tun kmod-veth kmod-pppoe kmod-usb-storage-uas kmod-ata-ahci ntfs3-mount ntfsprogs libustream-openssl ca-bundle ca-certificates luci-lib-ipkg ipset kmod-input-gpio-keys kmod-input-gpio-keys-polled kmod-gpio-button-hotplug kmod-hwmon-gpiofan
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: bpi-w2
+
+
+Target-Profile-Description:
+Build firmware images for Bananapi W2
+
+
+
+@@
+
+Target-Profile: DEVICE_gb081
+Target-Profile-Name: GB081
+Target-Profile-Packages: rtk-init rtd129x_env blkid mount-utils e2fsprogs tune2fs resize2fs mkf2fs busybox openssl-util curl kmod-ifb kmod-macvlan kmod-tun kmod-veth kmod-pppoe kmod-usb-storage-uas kmod-ata-ahci ntfs3-mount ntfsprogs libustream-openssl ca-bundle ca-certificates luci-lib-ipkg ipset kmod-input-gpio-keys kmod-input-gpio-keys-polled kmod-gpio-button-hotplug kmod-hwmon-gpiofan kmod-leds-gpio luci-theme-material luci-app-cifs-mount luci-app-cpufreq luci-app-diskman luci-app-dockerman docker dockerd cgroupfs-mount luci-app-filetransfer luci-app-hd-idle luci-app-samba4 luci-app-sqm luci-app-ttyd luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn luci-i18n-wol-zh-cn luci-i18n-upnp-zh-cn luci-i18n-ddns-zh-cn luci-i18n-vlmcsd-zh-cn luci-i18n-timecontrol-zh-cn luci-i18n-cifs-mount-zh-cn luci-i18n-cpufreq-zh-cn luci-i18n-dockerman-zh-cn luci-i18n-filetransfer-zh-cn luci-i18n-hd-idle-zh-cn luci-i18n-samba4-zh-cn luci-i18n-ttyd-zh-cn
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: gb081
+
+
+Target-Profile-Description:
+Build firmware images for GB081
+
+
+
+@@
+
+Target-Profile: DEVICE_hsa-bh1
+Target-Profile-Name: BH1
+Target-Profile-Packages: rtk-init rtd129x_env blkid mount-utils e2fsprogs tune2fs resize2fs mkf2fs busybox openssl-util curl kmod-ifb kmod-macvlan kmod-tun kmod-veth kmod-pppoe kmod-usb-storage-uas kmod-ata-ahci ntfs3-mount ntfsprogs libustream-openssl ca-bundle ca-certificates luci-lib-ipkg ipset kmod-input-gpio-keys kmod-input-gpio-keys-polled kmod-gpio-button-hotplug kmod-hwmon-gpiofan kmod-leds-gpio luci-theme-material luci-app-cifs-mount luci-app-cpufreq luci-app-diskman luci-app-dockerman docker dockerd cgroupfs-mount luci-app-filetransfer luci-app-hd-idle luci-app-samba4 luci-app-sqm luci-app-ttyd luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn luci-i18n-wol-zh-cn luci-i18n-upnp-zh-cn luci-i18n-ddns-zh-cn luci-i18n-vlmcsd-zh-cn luci-i18n-timecontrol-zh-cn luci-i18n-cifs-mount-zh-cn luci-i18n-cpufreq-zh-cn luci-i18n-dockerman-zh-cn luci-i18n-filetransfer-zh-cn luci-i18n-hd-idle-zh-cn luci-i18n-samba4-zh-cn luci-i18n-ttyd-zh-cn
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: hsa-bh1
+
+
+Target-Profile-Description:
+Build firmware images for BH1
+
+
+
+@@
+
+Target-Profile: DEVICE_rescue
+Target-Profile-Name: Rescue Mode
+Target-Profile-Packages: 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: rescue
+
+
+Target-Profile-Description:
+Build firmware images for Rescue Mode
+
+
+
+@@
+
+

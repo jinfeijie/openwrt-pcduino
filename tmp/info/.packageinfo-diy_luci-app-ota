@@ -1,0 +1,61 @@
+Source-Makefile: package/diy/luci-app-ota/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-ota
+Submenu: 3. Applications
+Version: 1.3.1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI for OTA upgrade
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description: LuCI for OTA upgrade
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-ota-en
+Default: LUCI_LANG_en||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ota
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ota - en translation
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ota - English
+jjm2473 <jjm2473@gmail.com>
+@@
+
+Package: luci-i18n-ota-zh-cn
+Default: LUCI_LANG_zh-cn||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-ota
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ota - zh-cn translation
+Maintainer: jjm2473 <jjm2473@gmail.com>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ota - 简体中文 (Chinese Simplified)
+jjm2473 <jjm2473@gmail.com>
+@@
+
+

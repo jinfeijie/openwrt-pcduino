@@ -1,0 +1,234 @@
+Source-Makefile: target/linux/rockchip/Makefile
+Target: rockchip
+Target-Board: rockchip
+Target-Name: Rockchip
+Target-Arch: 
+Target-Arch-Packages: 
+Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part squashfs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: 
+Linux-Version: 5.4.188
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware image for Rockchip SoC devices.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd istoreos-files dnsmasq firewall ip6tables iptables kmod-ipt-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug 
+Target: rockchip/armv8
+Target-Board: rockchip
+Target-Name: RK33xx boards (64 bit)
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_generic
+Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part rtc squashfs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=generic
+CPU-Type: generic
+Linux-Version: 5.4.188
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware image for Rockchip RK33xx devices.
+	This firmware features a 64 bit kernel.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd istoreos-files dnsmasq firewall ip6tables iptables kmod-ipt-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe luci-app-store uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug 
+Target-Profile: DEVICE_friendlyarm_nanopi-r2s
+Target-Profile-Name: FriendlyARM NanoPi R2S
+Target-Profile-Packages: kmod-usb-net-rtl8152 ethtool
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-r2s
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi R2S
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-r4s
+Target-Profile-Name: FriendlyARM NanoPi R4S
+Target-Profile-Packages: kmod-r8168 kmod-hwmon-pwmfan kmod-thermal
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-r4s
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi R4S
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-r4se
+Target-Profile-Name: FriendlyARM NanoPi R4SE
+Target-Profile-Packages: kmod-r8168 kmod-hwmon-pwmfan kmod-thermal
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-r4se
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi R4SE
+
+
+
+@@
+
+Target-Profile: DEVICE_pine64_rockpro64
+Target-Profile-Name: Pine64 RockPro64
+Target-Profile-Packages: 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: pine64,rockpro64
+
+
+Target-Profile-Description:
+Build firmware images for Pine64 RockPro64
+
+
+
+@@
+
+Target-Profile: DEVICE_radxa_rock-pi-4
+Target-Profile-Name: Radxa ROCK Pi 4
+Target-Profile-Packages: 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: radxa,rockpi4
+
+
+Target-Profile-Description:
+Build firmware images for Radxa ROCK Pi 4
+
+
+
+@@
+
+Target: rockchip/rk3568
+Target-Board: rockchip
+Target-Name: RK3568 boards (64 bit)
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_cortex-a53
+Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part rtc squashfs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=cortex-a53
+CPU-Type: cortex-a53
+Linux-Version: 4.19.238
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware image for Rockchip RK3568 devices.
+	This firmware features a 64 bit kernel.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd istoreos-files kmod-r8125 ethtool dnsmasq firewall ip6tables iptables kmod-ipt-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe luci-app-store uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug 
+Target-Profile: DEVICE_fastrhino_r66s
+Target-Profile-Name: FastRhino R66S
+Target-Profile-Packages: kmod-r8125
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: fastrhino,r66s
+
+
+Target-Profile-Description:
+Build firmware images for FastRhino R66S
+
+
+
+@@
+
+Target-Profile: DEVICE_fastrhino_r68s
+Target-Profile-Name: FastRhino R68S
+Target-Profile-Packages: kmod-r8125
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: fastrhino,r68s
+
+
+Target-Profile-Description:
+Build firmware images for FastRhino R68S
+
+
+
+@@
+
+Target-Profile: DEVICE_fastrhino_r6xs
+Target-Profile-Name: FastRhino R68s/R66s combined
+Target-Profile-Packages: kmod-r8125
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: fastrhino,r6xs fastrhino,r66s fastrhino,r68s
+
+
+Target-Profile-Description:
+Build firmware images for FastRhino R68s/R66s combined
+
+
+
+@@
+
+Target-Profile: DEVICE_hinlink_opc-h6xk
+Target-Profile-Name: HINLINK OPC-H69K/H68K/H66K combined
+Target-Profile-Packages: kmod-r8125 kmod-nvme kmod-scsi-core
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hinlink,opc-h6xk hinlink,opc-h66k hinlink,opc-h68k
+
+
+Target-Profile-Description:
+Build firmware images for HINLINK OPC-H69K/H68K/H66K combined
+
+
+
+@@
+
+Target-Profile: DEVICE_friendlyarm_nanopi-r5s
+Target-Profile-Name: FriendlyARM NanoPi R5S/R5C combined
+Target-Profile-Packages: kmod-r8125 kmod-nvme kmod-scsi-core kmod-hwmon-pwmfan kmod-thermal
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: friendlyarm,nanopi-r5s friendlyelec,nanopi-r5s friendlyarm,nanopi-r5s friendlyelec,nanopi-r5c
+
+
+Target-Profile-Description:
+Build firmware images for FriendlyARM NanoPi R5S/R5C combined
+
+
+
+@@
+
+Target-Profile: DEVICE_firefly_station-p2
+Target-Profile-Name: Firefly Station P2 / ROC PC
+Target-Profile-Packages: kmod-r8125 kmod-nvme kmod-scsi-core
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: firefly,station-p2 firefly,rk3568-roc-pc firefly,station-p2
+
+
+Target-Profile-Description:
+Build firmware images for Firefly Station P2 / ROC PC
+
+
+
+@@
+
+Target-Profile: DEVICE_lyt_t68m
+Target-Profile-Name: LYT T68M
+Target-Profile-Packages: kmod-r8125 kmod-nvme kmod-scsi-core
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: lyt,t68m lyt,t68m
+
+
+Target-Profile-Description:
+Build firmware images for LYT T68M
+
+
+
+@@
+
+Target-Profile: DEVICE_hsa_bh2
+Target-Profile-Name: HSA BH2
+Target-Profile-Packages: kmod-scsi-core
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hsa,bh2 hsa,bh2
+
+
+Target-Profile-Description:
+Build firmware images for HSA BH2
+
+
+
+@@
+
+

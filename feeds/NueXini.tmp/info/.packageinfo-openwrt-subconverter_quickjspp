@@ -1,0 +1,22 @@
+Source-Makefile: feeds/NueXini/openwrt-subconverter/quickjspp/Makefile
+
+Package: quickjspp
+Version: 2022-07-22-9cee4b4d27271d54b95f6f42bfdc534ebeaaeb72-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libatomic +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: quickjs
+Section: lib
+Category: Libraries
+Repository: base
+Title: QuickJS wrapper for C++
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: quickjspp-2022-07-22-9cee4b4d27271d54b95f6f42bfdc534ebeaaeb72.tar.xz
+Type: ipkg
+Description:   QuickJSPP is QuickJS wrapper for C++. It allows you to easily embed
+  Javascript engine into your program.
+https://github.com/ftk/quickjspp
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+

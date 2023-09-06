@@ -1,0 +1,24 @@
+Source-Makefile: package/feeds/NueXini/luci-theme-edge-1907/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-theme-edge-1907
+Submenu: 4. Themes
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +curl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: Edge Theme
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: Edge Theme
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

@@ -1,0 +1,22 @@
+Source-Makefile: package/feeds/NueXini/wrtbwmon/Makefile
+
+Package: wrtbwmon
+Submenu: Tools
+Version: 1.2.1-3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +iptables +@BUSYBOX_CONFIG_IP
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: NueXini
+Title: A Traffic Usage Monitor
+Maintainer: 
+Source: 
+Type: ipkg
+Description: An CERNET client daemon,
+Most usually used in China collages.
+
+@@
+
+

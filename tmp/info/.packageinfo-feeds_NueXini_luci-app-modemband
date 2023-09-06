@@ -1,0 +1,42 @@
+Source-Makefile: package/feeds/NueXini/luci-app-modemband/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-modemband
+Submenu: 3. Applications
+Version: 1.0.18-20230701
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +sms-tool +modemband
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: LuCI JS Support for modemband application
+Maintainer: OpenWrt LuCI community
+Source: 
+Type: ipkg
+Description:    LuCI JS interface for the modemband. The package allows set LTE bands for selected 4G/5G modems.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-modemband-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread luci-app-modemband
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: NueXini
+Title: luci-app-modemband - pl translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-modemband - Polski (Polish)
+
+@@
+
+
